@@ -51,12 +51,28 @@ body {
     transition: .2s all;
 }
 
+.button_t2 {
+    max-width: 100%;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    transform: translate(0em, 0.5em);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 0.3em 10px;
+}
+
 /*     Banners    */
 
 .banner-warning {
     display: flex;
     width: 100%;
     height: 100vh;
+    position: fixed;
 
     align-items: center;
     flex-direction: column;
@@ -159,6 +175,37 @@ body {
     border-radius: 10px;
     padding-left: 20px;
     font-family: 'Roboto', sans-serif;
+}
+
+/*     Welcome     */
+
+.sign__welcome {
+    height: 100vh;
+}
+
+.welcome__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    padding: 10em 3em;
+}
+
+.welcome__title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.welcome__logo {
+    height: 5em;
+}
+
+.welcome__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /*    Media Q's    */
